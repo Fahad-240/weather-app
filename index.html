@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1 class="header">Weather App</h1>
+    <div class="weather">
+      <input id="inputCity" type="text" class="input" value="lahore" />
+      <button class="btn" onclick="weatherData()">Click</button>
+      <div class="total">
+        <div id="con" class="api"></div>
+        <div id="loc" class="api"></div>
+        <div id="temp" class="api"></div>
+        <div id="fah" class="api"></div>
+        <div id="feel" class="api"></div>
+        <div id="hum" class="api"></div>
+        <div id="day" class="api"></div>
+        <div id="wind" class="api"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
